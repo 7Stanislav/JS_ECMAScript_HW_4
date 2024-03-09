@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homework</title>
+</head>
+<body>
+
+    <script>
+
+// Задача 1
+
+// function getUserData(userID) {
+//     return fetch(`https://api.example.com/users/${userID}`)
+//         .then(response => {
+//             if (!response.ok) {
+//                 throw new Error('User not found');
+//             }
+//             return response.json();
+//         });
+// }
+
+// getUserData(123)
+//     .then(userData => {
+//         console.log(userData);
+//     })
+//     .catch(error => {
+//         console.error(error.message);
+//     });
+
+
+// Задача 2
+
+// function saveUserData(userData) {
+//     return fetch('/users', {
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify(userData)
+//     })
+//     .then(response => {
+//         if (!response.ok) {
+//             throw new Error('Failed to save user data');
+//         }
+//     });
+// }
+
+// const user = {
+//     name: 'John Smith',
+//     age: 30,
+//     email: 'john@example.com'
+// };
+
+// saveUserData(user)
+//     .then(() => {
+//         console.log('User data saved successfully');
+//     })
+//     .catch(error => {
+//         console.error(error.message);
+//     });
+
+
+// Задача 3
+
+function changeStyleDelayed(elementId, delay) {
+    setTimeout(() => {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.style.color = 'red';
+            element.style.fontSize = '20px';
+        }
+    }, delay);
+}
+
+changeStyleDelayed('myElement', 2000); // Через 2 секунды изменяет стиль элемента с id 'myElement'
+
+
+    </script>
+
+</body>
+</html>
